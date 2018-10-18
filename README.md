@@ -9,3 +9,5 @@ After uploading a shell script to your server, be sure to call chmod 744 on it t
 
 If you get complaints with shell scripts about a bad interpreter with a ^M at the end, follow this page:
 https://stackoverflow.com/questions/2920416/configure-bin-shm-bad-interpreter
+
+ie. Open your script with vim, type :set fileformat=unix, hit Enter, then save with :wq
