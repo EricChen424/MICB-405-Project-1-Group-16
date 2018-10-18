@@ -5,5 +5,7 @@ pscp echen_mb18@orca-wg.bcgsc.ca:/home/echen_mb18/Project_1/1_FastQC_Output/*.ht
 
 pscp Latrotoxin_NCBI.fasta echen_mb18@orca-wg.bcgsc.ca:/home/echen_mb18/Dump
 
+After uploading a shell script to your server, be sure to call chmod 744 on it to give it execute permissions
+
 If you get complaints with shell scripts about a bad interpreter with a ^M at the end, follow this page:
 https://stackoverflow.com/questions/2920416/configure-bin-shm-bad-interpreter
