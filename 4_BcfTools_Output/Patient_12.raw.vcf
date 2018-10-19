@@ -1,0 +1,72 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftoolsCommand=mpileup --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_12.sorted.bam
+##reference=file:///home/echen_mb18/Project_1/ref_genome.fasta
+##contig=<ID=Scary_pathogen_scaffold_1,length=4730612>
+##contig=<ID=Scary_pathogen_scaffold_2,length=78193>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -mv -; Date=Fri Oct 19 08:23:00 2018
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_12.sorted.bam
+Scary_pathogen_scaffold_1	115714	.	C	T	225	.	DP=41;VDB=0.655773;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,16;MQ=60	GT:PL	1/1:255,102,0
+Scary_pathogen_scaffold_1	416166	.	GCCC	GCC	228	.	INDEL;IDV=34;IMF=0.944444;DP=36;VDB=0.646521;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,4,12,19;MQ=60	GT:PL	1/1:255,16,0
+Scary_pathogen_scaffold_1	432510	.	T	G	225	.	DP=48;VDB=0.433233;SGB=-0.693145;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,24,16;MQ=60	GT:PL	1/1:255,120,0
+Scary_pathogen_scaffold_1	463878	.	A	G	13.5888	.	DP=39;VDB=0.159034;SGB=-0.590765;RPB=0.818731;MQB=0.0128353;MQSB=0.252539;BQB=0.36331;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=7,5,0,5;MQ=48	GT:PL	0/1:47,0,175
+Scary_pathogen_scaffold_1	463887	.	C	T	50	.	DP=41;VDB=0.0157188;SGB=-0.662043;RPB=0.588055;MQB=0.00377905;MQSB=0.148122;BQB=0.736714;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=9,3,0,9;MQ=42	GT:PL	0/1:83,0,207
+Scary_pathogen_scaffold_1	463920	.	C	T	52	.	DP=40;VDB=0.000105688;SGB=-0.651104;RPB=0.0493739;MQB=0.0177152;MQSB=0.625784;BQB=0.664757;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=7,8,1,7;MQ=43	GT:PL	0/1:85,0,226
+Scary_pathogen_scaffold_1	463947	.	C	T	15.5968	.	DP=32;VDB=0.000757572;SGB=-0.616816;RPB=0.0129349;MQB=0.0160323;MQSB=0.911488;BQB=0.96726;MQ0F=0.03125;ICB=1;HOB=0.5;AC=1;AN=2;DP4=3,13,0,6;MQ=44	GT:PL	0/1:50,0,234
+Scary_pathogen_scaffold_1	464068	.	T	C	28.8671	.	DP=25;VDB=0.168287;SGB=-0.556411;RPB=0.658617;MQB=0.658617;MQSB=0.64118;BQB=0.323961;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=6,5,3,1;MQ=45	GT:PL	0/1:62,0,130
+Scary_pathogen_scaffold_1	464220	.	G	T	225	.	DP=31;VDB=0.506355;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,6,15;MQ=60	GT:PL	1/1:255,63,0
+Scary_pathogen_scaffold_1	718062	.	C	T	225	.	DP=46;VDB=0.653673;SGB=-0.693145;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,17,23;MQ=60	GT:PL	1/1:255,120,0
+Scary_pathogen_scaffold_1	967467	.	T	C	225	.	DP=22;VDB=0.56484;SGB=-0.692562;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,14,8;MQ=60	GT:PL	1/1:255,66,0
+Scary_pathogen_scaffold_1	1190541	.	A	G	225	.	DP=44;VDB=0.850564;SGB=-0.693127;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,15;MQ=60	GT:PL	1/1:255,99,0
+Scary_pathogen_scaffold_1	1599003	.	GGCGCGCG	GGCGCG	125	.	INDEL;IDV=32;IMF=0.914286;DP=35;VDB=0.242225;SGB=-0.691153;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=4,13,7,11;MQ=60	GT:PL	0/1:158,0,103
+Scary_pathogen_scaffold_1	1844606	.	C	T	15.1004	.	DP=5;SGB=-0.379885;RPB=1;MQB=1;MQSB=1;BQB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=1,2,1,0;MQ=60	GT:PL	0/1:48,0,96
+Scary_pathogen_scaffold_1	2049977	.	C	T	225	.	DP=20;VDB=0.939174;SGB=-0.690438;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,8;MQ=60	GT:PL	1/1:255,51,0
+Scary_pathogen_scaffold_1	2149430	.	C	T	225	.	DP=20;VDB=0.165791;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,8,11;MQ=60	GT:PL	1/1:255,57,0
+Scary_pathogen_scaffold_1	2186376	.	C	T	225	.	DP=26;VDB=0.985668;SGB=-0.692717;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,16;MQ=60	GT:PL	1/1:255,69,0
+Scary_pathogen_scaffold_1	2239111	.	C	T	225	.	DP=23;VDB=0.22938;SGB=-0.691153;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,8;MQ=60	GT:PL	1/1:255,54,0
+Scary_pathogen_scaffold_1	2338280	.	C	T	225	.	DP=32;VDB=0.97217;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,20,7;MQ=60	GT:PL	1/1:255,81,0
+Scary_pathogen_scaffold_1	2343189	.	C	T	225	.	DP=19;VDB=0.0998289;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,12,7;MQ=60	GT:PL	1/1:255,57,0
+Scary_pathogen_scaffold_1	2463198	.	TCGCGCGCGCGC	TCGCGCGCGC	218	.	INDEL;IDV=32;IMF=0.941176;DP=34;VDB=0.290771;SGB=-0.693079;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=3,2,18,11;MQ=60	GT:PL	0/1:255,0,16
+Scary_pathogen_scaffold_1	2676641	.	G	A	225	.	DP=26;VDB=0.753326;SGB=-0.692562;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,17,5;MQ=60	GT:PL	1/1:255,66,0
+Scary_pathogen_scaffold_1	2744432	.	TCGCGCGCGCGCGC	TCGCGCGCGCGC	228	.	INDEL;IDV=45;IMF=0.978261;DP=46;VDB=0.470277;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,4,14,28;MQ=60	GT:PL	1/1:255,62,0
+Scary_pathogen_scaffold_1	2790755	.	CAAAA	CAAA	141	.	INDEL;IDV=12;IMF=0.923077;DP=13;VDB=0.848275;SGB=-0.680642;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=1,0,7,5;MQ=60	GT:PL	1/1:168,14,0
+Scary_pathogen_scaffold_1	2830783	.	A	G	225	.	DP=23;VDB=0.734679;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,12;MQ=60	GT:PL	1/1:255,63,0
+Scary_pathogen_scaffold_1	2867895	.	ACGCGCGCGCGCG	ACGCGCGCGCG	228	.	INDEL;IDV=32;IMF=0.941176;DP=34;VDB=0.371806;SGB=-0.693079;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=2,3,19,10;MQ=60	GT:PL	1/1:255,16,0
+Scary_pathogen_scaffold_1	2874076	.	GTTTTTTT	GTTTTTT	100	.	INDEL;IDV=34;IMF=1;DP=34;VDB=0.219312;SGB=-0.693097;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,4,10,20;MQ=60	GT:PL	1/1:127,56,0
+Scary_pathogen_scaffold_1	2930313	.	TTGGTTCTGGTTCTGGTTCTGG	TTGGTTCTGG	219	.	INDEL;IDV=1;IMF=0.025641;DP=39;VDB=0.659947;SGB=-0.693079;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=3,7,12,17;MQ=60	GT:PL	0/1:255,0,103
+Scary_pathogen_scaffold_1	2930323	.	TTCTGGTTCTGGCTCTGGCTCTGGCTCTGG	TTCTGGCTCTGGCTCTGG	217	.	INDEL;IDV=30;IMF=0.857143;DP=35;VDB=0.197937;SGB=-0.693097;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=2,3,12,18;MQ=60	GT:PL	0/1:255,0,46
+Scary_pathogen_scaffold_1	2930329	.	T	C	51	.	DP=11;VDB=0.0349627;SGB=-0.511536;RPB=0.150134;MQB=0.900802;MQSB=0.900802;BQB=0.150134;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=2,3,1,2;MQ=60	GT:PL	0/1:84,0,98
+Scary_pathogen_scaffold_1	2930335	.	C	T	84	.	DP=11;VDB=0.000780428;SGB=-0.616816;RPB=0.115573;MQB=0.924584;MQSB=0.924584;BQB=0.115573;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=1,2,2,4;MQ=60	GT:PL	0/1:117,0,80
+Scary_pathogen_scaffold_1	3100282	.	C	T	225	.	DP=31;VDB=0.826312;SGB=-0.693021;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,20,7;MQ=60	GT:PL	1/1:255,81,0
+Scary_pathogen_scaffold_1	3457068	.	C	T	225	.	DP=30;VDB=0.892528;SGB=-0.693079;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,14;MQ=60	GT:PL	1/1:255,87,0
+Scary_pathogen_scaffold_1	3607939	.	TACC	T	185	.	INDEL;IDV=1;IMF=0.027027;DP=37;VDB=0.954594;SGB=-0.692976;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=7,4,13,13;MQ=60	GT:PL	0/1:218,0,99
+Scary_pathogen_scaffold_1	3607940	.	ACCGCCGCCGCCGCCGC	ACCGCCGCCGCCGC	219	.	INDEL;IDV=29;IMF=0.783784;DP=37;VDB=0.951645;SGB=-0.693054;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=5,4,15,13;MQ=60	GT:PL	0/1:255,0,78
+Scary_pathogen_scaffold_1	3981092	.	T	C	225	.	DP=24;VDB=0.112677;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,14;MQ=60	GT:PL	1/1:255,63,0
+Scary_pathogen_scaffold_1	4095991	.	ATGGCAAACAAAGGCAAACGCTGGCAAACA	ATGGCAAACA	220	.	INDEL;IDV=18;IMF=0.75;DP=24;VDB=0.367417;SGB=-0.691153;MQSB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=5,1,11,7;MQ=60	GT:PL	0/1:255,0,98
+Scary_pathogen_scaffold_1	4096001	.	A	G	21.4455	.	DP=2;VDB=0.06;SGB=-0.453602;MQ0F=0;AC=2;AN=2;DP4=0,0,2,0;MQ=60	GT:PL	1/1:51,6,0
+Scary_pathogen_scaffold_1	4096003	.	G	T	21.4455	.	DP=2;VDB=0.02;SGB=-0.453602;MQ0F=0;AC=2;AN=2;DP4=0,0,2,0;MQ=60	GT:PL	1/1:51,6,0
+Scary_pathogen_scaffold_1	4331351	.	G	A	225	.	DP=52;VDB=0.990239;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,22,21;MQ=60	GT:PL	1/1:255,129,0
+Scary_pathogen_scaffold_1	4399342	.	A	C	225	.	DP=30;VDB=0.285726;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,14;MQ=60	GT:PL	1/1:255,63,0
+Scary_pathogen_scaffold_2	919	.	C	T	225	.	DP=16;VDB=0.415823;SGB=-0.686358;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,3,11;MQ=60	GT:PL	1/1:255,42,0
