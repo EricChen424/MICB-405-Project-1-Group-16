@@ -1,0 +1,24 @@
+#!/bin/sh
+samtools flagstat ~/Project_1/2_BWA_Output/Cat.bam  > ~/Project_1/2_BWA_Output/stats/Cat.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Bat.bam  > ~/Project_1/2_BWA_Output/stats/Bat.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Guinea_pig.bam  > ~/Project_1/2_BWA_Output/stats/Guinea_pig.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Rabid_raccoon_1.bam  > ~/Project_1/2_BWA_Output/stats/Rabid_raccoon_1.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Rabid_raccoon_2.bam  > ~/Project_1/2_BWA_Output/stats/Rabid_raccoon_2.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Rabid_raccoon_3.bam  > ~/Project_1/2_BWA_Output/stats/Rabid_raccoon_3.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Rabid_raccoon_4.bam  > ~/Project_1/2_BWA_Output/stats/Rabid_raccoon_4.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_1.bam  > ~/Project_1/2_BWA_Output/stats/Patient_1.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_2.bam  > ~/Project_1/2_BWA_Output/stats/Patient_2.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_3.bam  > ~/Project_1/2_BWA_Output/stats/Patient_3.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_4.bam  > ~/Project_1/2_BWA_Output/stats/Patient_4.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_5.bam  > ~/Project_1/2_BWA_Output/stats/Patient_5.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_6.bam  > ~/Project_1/2_BWA_Output/stats/Patient_6.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_7.bam  > ~/Project_1/2_BWA_Output/stats/Patient_7.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_8.bam  > ~/Project_1/2_BWA_Output/stats/Patient_8.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_9.bam  > ~/Project_1/2_BWA_Output/stats/Patient_9.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_10.bam  > ~/Project_1/2_BWA_Output/stats/Patient_10.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_11.bam  > ~/Project_1/2_BWA_Output/stats/Patient_11.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_12.bam  > ~/Project_1/2_BWA_Output/stats/Patient_12.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_13.bam  > ~/Project_1/2_BWA_Output/stats/Patient_13.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_14.bam  > ~/Project_1/2_BWA_Output/stats/Patient_14.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_15.bam  > ~/Project_1/2_BWA_Output/stats/Patient_15.txt
+samtools flagstat ~/Project_1/2_BWA_Output/Patient_16.bam  > ~/Project_1/2_BWA_Output/stats/Patient_16.txt
