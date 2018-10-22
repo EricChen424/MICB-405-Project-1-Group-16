@@ -1,5 +1,4 @@
 #!/bin/sh
-#TODO: this is a great candidate for parameter tweaking
 for fastq in /projects/micb405/resources/project_1/*_1.fastq.gz;
 do
 	prefix=$(basename $fastq | sed 's/_1.fastq.gz//g')
