@@ -10,5 +10,7 @@ mkdir ~/Project_1/4_BcfTools_Output/raw
 mkdir ~/Project_1/4_BcfTools_Output/filtered
 mkdir ~/Project_1/4_BcfTools_Output/strict_filter
 mkdir ~/Project_1/5_MSA_Output
+mkdir ~/Project_1/5_MSA_Output/filtered
+mkdir ~/Project_1/5_MSA_Output/strict_filter
 
 cp /projects/micb405/resources/project_1/ref_genome.fasta ~/Project_1/
