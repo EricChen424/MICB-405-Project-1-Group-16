@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.9+htslib-1.9
-##bcftoolsCommand=mpileup -q 30 -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_13.sorted.rmdup.bam
+##bcftoolsCommand=mpileup -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_13.sorted.rmdup.bam
 ##reference=file:///home/echen_mb18/Project_1/ref_genome.fasta
 ##contig=<ID=Scary_pathogen_scaffold_1,length=4730612>
 ##contig=<ID=Scary_pathogen_scaffold_2,length=78193>
@@ -26,10 +26,11 @@
 ##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
 ##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
 ##bcftools_callVersion=1.9+htslib-1.9
-##bcftools_callCommand=call -mv -; Date=Mon Oct 22 03:30:39 2018
+##bcftools_callCommand=call -mv -; Date=Tue Oct 23 07:51:40 2018
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_13.sorted.rmdup.bam
 Scary_pathogen_scaffold_1	115714	.	C	T	225	.	DP=95;VDB=0.992059;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,36,35;MQ=60	GT:PL	1/1:255,214,0
 Scary_pathogen_scaffold_1	432510	.	T	G	225	.	DP=71;VDB=0.397349;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,24,24;MQ=60	GT:PL	1/1:255,144,0
+Scary_pathogen_scaffold_1	464035	.	T	C	32.3626	.	DP=27;VDB=0.0137686;SGB=-0.616816;RPB=0.431591;MQB=0.939413;MQSB=0.711573;BQB=0.309248;MQ0F=0.0740741;ICB=1;HOB=0.5;AC=1;AN=2;DP4=6,3,3,3;MQ=25	GT:PL	0/1:65,0,79
 Scary_pathogen_scaffold_1	464220	.	G	T	225	.	DP=66;VDB=0.358514;SGB=-0.693144;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,15,24;MQ=60	GT:PL	1/1:255,117,0
 Scary_pathogen_scaffold_1	718062	.	C	T	225	.	DP=63;VDB=0.795703;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,22,26;MQ=60	GT:PL	1/1:255,144,0
 Scary_pathogen_scaffold_1	808994	.	A	G	3.33542	.	DP=12;SGB=-0.379885;RPB=1;MQB=1;MQSB=0.900802;BQB=1;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=4,3,1,0;MQ=60	GT:PL	0/1:36,0,245
@@ -50,5 +51,4 @@ Scary_pathogen_scaffold_1	3100282	.	C	T	225	.	DP=48;VDB=0.459946;SGB=-0.69312;MQ
 Scary_pathogen_scaffold_1	3981092	.	T	C	225	.	DP=42;VDB=0.736222;SGB=-0.693132;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,10,24;MQ=60	GT:PL	1/1:255,102,0
 Scary_pathogen_scaffold_1	4331351	.	G	A	225	.	DP=70;VDB=0.990865;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,19,32;MQ=60	GT:PL	1/1:255,154,0
 Scary_pathogen_scaffold_1	4399342	.	A	C	225	.	DP=31;VDB=0.222992;SGB=-0.69168;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,10;MQ=60	GT:PL	1/1:255,57,0
-Scary_pathogen_scaffold_1	4473231	.	T	C	10.7923	.	DP=3;SGB=-0.379885;MQ0F=0;AC=2;AN=2;DP4=0,0,1,0;MQ=40	GT:PL	1/1:40,3,0
 Scary_pathogen_scaffold_2	919	.	C	T	225	.	DP=22;VDB=0.116089;SGB=-0.690438;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,5,12;MQ=60	GT:PL	1/1:255,51,0
