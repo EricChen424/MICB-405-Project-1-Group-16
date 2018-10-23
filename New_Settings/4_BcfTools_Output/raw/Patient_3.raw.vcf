@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.9+htslib-1.9
-##bcftoolsCommand=mpileup -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_3.sorted.rmdup.bam
+##bcftoolsCommand=mpileup -q 30 -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_3.sorted.rmdup.bam
 ##reference=file:///home/echen_mb18/Project_1/ref_genome.fasta
 ##contig=<ID=Scary_pathogen_scaffold_1,length=4730612>
 ##contig=<ID=Scary_pathogen_scaffold_2,length=78193>
@@ -26,11 +26,10 @@
 ##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
 ##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
 ##bcftools_callVersion=1.9+htslib-1.9
-##bcftools_callCommand=call -mv -; Date=Tue Oct 23 08:05:37 2018
+##bcftools_callCommand=call -mv -; Date=Mon Oct 22 03:44:24 2018
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_3.sorted.rmdup.bam
 Scary_pathogen_scaffold_1	115714	.	C	T	225	.	DP=60;VDB=0.233617;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,19,36;MQ=60	GT:PL	1/1:255,166,0
 Scary_pathogen_scaffold_1	432510	.	T	G	225	.	DP=62;VDB=0.0606745;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,35,21;MQ=60	GT:PL	1/1:255,169,0
-Scary_pathogen_scaffold_1	463920	.	C	T	12.3466	.	DP=31;VDB=0.13561;SGB=-0.590765;RPB=0.149361;MQB=0.0679564;MQSB=0.310905;BQB=0.33659;MQ0F=0.0645161;ICB=1;HOB=0.5;AC=1;AN=2;DP4=3,9,1,4;MQ=39	GT:PL	0/1:46,0,169
 Scary_pathogen_scaffold_1	464220	.	G	T	225	.	DP=40;VDB=0.133322;SGB=-0.692352;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,9,12;MQ=60	GT:PL	1/1:255,63,0
 Scary_pathogen_scaffold_1	718062	.	C	T	225	.	DP=55;VDB=0.971496;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,26,27;MQ=60	GT:PL	1/1:255,160,0
 Scary_pathogen_scaffold_1	967467	.	T	C	225	.	DP=44;VDB=0.0202379;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,29,13;MQ=60	GT:PL	1/1:255,126,0
