@@ -1,0 +1,54 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.9+htslib-1.9
+##bcftoolsCommand=mpileup -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_4.sorted.bam
+##reference=file:///home/echen_mb18/Project_1/ref_genome.fasta
+##contig=<ID=Scary_pathogen_scaffold_1,length=4730612>
+##contig=<ID=Scary_pathogen_scaffold_2,length=78193>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.9+htslib-1.9
+##bcftools_callCommand=call -mv -; Date=Sun Oct 28 01:53:41 2018
+##bcftools_filterVersion=1.9+htslib-1.9
+##bcftools_filterCommand=filter --include 'QUAL >= 20 & DP >= 5' -o /home/echen_mb18/Project_1/4_BcfTools_Output/filtered/Patient_4.laxfiltered.vcf /home/echen_mb18/Project_1/4_BcfTools_Output/raw/Patient_4.raw.vcf; Date=Sun Oct 28 04:32:01 2018
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_4.sorted.bam
+Scary_pathogen_scaffold_1	115714	.	C	T	225	PASS	DP=87;VDB=0.548086;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,41,25;MQ=60	GT:PL	1/1:255,199,0
+Scary_pathogen_scaffold_1	432510	.	T	G	225	PASS	DP=97;VDB=0.0941996;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,48,27;MQ=60	GT:PL	1/1:255,226,0
+Scary_pathogen_scaffold_1	464220	.	G	T	225	PASS	DP=75;VDB=0.579515;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,23,20;MQ=60	GT:PL	1/1:255,129,0
+Scary_pathogen_scaffold_1	718062	.	C	T	225	PASS	DP=70;VDB=0.799404;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,27,28;MQ=60	GT:PL	1/1:255,166,0
+Scary_pathogen_scaffold_1	967467	.	T	C	225	PASS	DP=81;VDB=0.00270494;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,45,20;MQ=60	GT:PL	1/1:255,196,0
+Scary_pathogen_scaffold_1	1190541	.	A	G	225	PASS	DP=80;VDB=0.999903;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,36,26;MQ=60	GT:PL	1/1:255,187,0
+Scary_pathogen_scaffold_1	2049977	.	C	T	225	PASS	DP=53;VDB=0.728385;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,21,21;MQ=60	GT:PL	1/1:255,123,0
+Scary_pathogen_scaffold_1	2149430	.	C	T	225	PASS	DP=53;VDB=0.022836;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,26,18;MQ=60	GT:PL	1/1:255,132,0
+Scary_pathogen_scaffold_1	2186376	.	C	T	225	PASS	DP=48;VDB=0.997532;SGB=-0.693144;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,22,17;MQ=60	GT:PL	1/1:255,117,0
+Scary_pathogen_scaffold_1	2239111	.	C	T	225	PASS	DP=18;VDB=0.366082;SGB=-0.680642;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,11,1;MQ=60	GT:PL	1/1:255,36,0
+Scary_pathogen_scaffold_1	2338280	.	C	T	225	PASS	DP=66;VDB=0.917215;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,34,12;MQ=60	GT:PL	1/1:255,138,0
+Scary_pathogen_scaffold_1	2343189	.	C	T	225	PASS	DP=57;VDB=0.141693;SGB=-0.693146;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,31,13;MQ=60	GT:PL	1/1:255,132,0
+Scary_pathogen_scaffold_1	2676641	.	G	A	225	PASS	DP=44;VDB=0.161766;SGB=-0.69311;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,18,13;MQ=60	GT:PL	1/1:255,93,0
+Scary_pathogen_scaffold_1	2830783	.	A	G	225	PASS	DP=66;VDB=0.989815;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,24,26;MQ=60	GT:PL	1/1:255,151,0
+Scary_pathogen_scaffold_1	2930329	.	T	C	104	PASS	DP=12;VDB=0.00429937;SGB=-0.590765;RPB=0.150134;MQB=0.900802;MQSB=0.900802;BQB=0.900802;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=3,0,2,3;MQ=60	GT:PL	0/1:137,0,92
+Scary_pathogen_scaffold_1	2930335	.	C	T	100	PASS	DP=12;VDB=0.00895694;SGB=-0.590765;RPB=0.0476173;MQB=0.952347;MQSB=1.00775;BQB=0.952347;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=2,3,4,1;MQ=60	GT:PL	0/1:133,0,129
+Scary_pathogen_scaffold_1	3064123	.	A	T	225	PASS	DP=85;VDB=0.0116732;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,44,21;MQ=60	GT:PL	1/1:255,196,0
+Scary_pathogen_scaffold_1	3100282	.	C	T	225	PASS	DP=72;VDB=0.229084;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,39,17;MQ=60	GT:PL	1/1:255,169,0
+Scary_pathogen_scaffold_1	3981092	.	T	C	225	PASS	DP=55;VDB=0.305706;SGB=-0.693147;MQSB=0.936864;MQ0F=0;AC=2;AN=2;DP4=0,0,15,30;MQ=59	GT:PL	1/1:255,135,0
+Scary_pathogen_scaffold_1	4331351	.	G	A	225	PASS	DP=102;VDB=0.74237;SGB=-0.693147;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,38,41;MQ=60	GT:PL	1/1:255,238,0
+Scary_pathogen_scaffold_1	4399342	.	A	C	225	PASS	DP=42;VDB=0.224542;SGB=-0.693136;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,13,22;MQ=60	GT:PL	1/1:255,105,0
+Scary_pathogen_scaffold_2	919	.	C	T	225	PASS	DP=27;VDB=0.0149992;SGB=-0.692067;MQSB=1;MQ0F=0;AC=2;AN=2;DP4=0,0,7,13;MQ=60	GT:PL	1/1:255,60,0

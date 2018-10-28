@@ -7,3 +7,7 @@ do
 	~/Project_1/3_SamTools_Output/$prefix\.sorted.bam | bcftools call -mv - \
 	>~/Project_1/4_BcfTools_Output/raw/$prefix\.raw.vcf
 done
+
+bcftools mpileup -I -A --fasta-ref ~/Project_1/ref_genome.fasta \
+~/Project_1/3_SamTools_Output/Bat.sorted.bam | bcftools call -mv - \
+>~/Project_1/4_BcfTools_Output/raw/Bat.raw.vcf

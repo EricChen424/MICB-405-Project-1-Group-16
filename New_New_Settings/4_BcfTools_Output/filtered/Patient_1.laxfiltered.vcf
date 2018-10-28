@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.2
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##bcftoolsVersion=1.9+htslib-1.9
-##bcftoolsCommand=mpileup -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_1.sorted.rmdup.bam
+##bcftoolsCommand=mpileup -I --fasta-ref /home/echen_mb18/Project_1/ref_genome.fasta /home/echen_mb18/Project_1/3_SamTools_Output/Patient_1.sorted.bam
 ##reference=file:///home/echen_mb18/Project_1/ref_genome.fasta
 ##contig=<ID=Scary_pathogen_scaffold_1,length=4730612>
 ##contig=<ID=Scary_pathogen_scaffold_2,length=78193>
@@ -26,11 +26,11 @@
 ##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
 ##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
 ##bcftools_callVersion=1.9+htslib-1.9
-##bcftools_callCommand=call -mv -; Date=Tue Oct 23 07:40:54 2018
+##bcftools_callCommand=call -mv -; Date=Sun Oct 28 01:22:55 2018
 ##bcftools_filterVersion=1.9+htslib-1.9
-##bcftools_filterCommand=filter --include 'QUAL >= 20 & DP >= 5' -o /home/echen_mb18/Project_1/4_BcfTools_Output/filtered/Patient_1.laxfiltered.vcf /home/echen_mb18/Project_1/4_BcfTools_Output/raw/Patient_1.raw.vcf; Date=Wed Oct 24 00:04:09 2018
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_1.sorted.rmdup.bam
-Scary_pathogen_scaffold_1	463887	.	C	T	60	PASS	DP=101;VDB=0.0656497;SGB=-0.69168;RPB=0.4884;MQB=1.71951e-05;MQSB=0.380916;BQB=0.182896;MQ0F=0.019802;ICB=1;HOB=0.5;AC=1;AN=2;DP4=16,17,5,14;MQ=39	GT:PL	0/1:94,0,255
-Scary_pathogen_scaffold_1	463920	.	C	T	58	PASS	DP=97;VDB=3.51315e-07;SGB=-0.690438;RPB=0.591933;MQB=0.00073056;MQSB=0.223526;BQB=0.990721;MQ0F=0.0206186;ICB=1;HOB=0.5;AC=1;AN=2;DP4=9,20,1,16;MQ=37	GT:PL	0/1:91,0,255
-Scary_pathogen_scaffold_1	463947	.	C	T	38.1652	PASS	DP=78;VDB=3.32156e-06;SGB=-0.683931;RPB=0.000412619;MQB=0.0237517;MQSB=0.0312685;BQB=0.343132;MQ0F=0.025641;ICB=1;HOB=0.5;AC=1;AN=2;DP4=8,26,0,13;MQ=38	GT:PL	0/1:72,0,239
-Scary_pathogen_scaffold_1	464035	.	T	C	27.9637	PASS	DP=34;VDB=0.00490644;SGB=-0.590765;RPB=1;MQB=0.97357;MQSB=0.992528;BQB=0.180092;MQ0F=0.0588235;ICB=1;HOB=0.5;AC=1;AN=2;DP4=5,9,4,1;MQ=40	GT:PL	0/1:61,0,123
+##bcftools_filterCommand=filter --include 'QUAL >= 20 & DP >= 5' -o /home/echen_mb18/Project_1/4_BcfTools_Output/filtered/Patient_1.laxfiltered.vcf /home/echen_mb18/Project_1/4_BcfTools_Output/raw/Patient_1.raw.vcf; Date=Sun Oct 28 02:25:34 2018
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	/home/echen_mb18/Project_1/3_SamTools_Output/Patient_1.sorted.bam
+Scary_pathogen_scaffold_1	463887	.	C	T	52	PASS	DP=107;VDB=0.0685719;SGB=-0.69168;RPB=0.43896;MQB=4.78534e-05;MQSB=0.620793;BQB=0.35782;MQ0F=0.0186916;ICB=1;HOB=0.5;AC=1;AN=2;DP4=22,14,6,13;MQ=39	GT:PL	0/1:86,0,255
+Scary_pathogen_scaffold_1	463920	.	C	T	57	PASS	DP=101;VDB=5.29401e-07;SGB=-0.690438;RPB=0.508876;MQB=0.000624848;MQSB=0.535122;BQB=0.92366;MQ0F=0.019802;ICB=1;HOB=0.5;AC=1;AN=2;DP4=13,17,2,15;MQ=37	GT:PL	0/1:91,0,255
+Scary_pathogen_scaffold_1	463947	.	C	T	42.0699	PASS	DP=81;VDB=6.46461e-06;SGB=-0.683931;RPB=0.000339595;MQB=0.0249144;MQSB=0.117559;BQB=0.327285;MQ0F=0.0246914;ICB=1;HOB=0.5;AC=1;AN=2;DP4=11,25,1,12;MQ=38	GT:PL	0/1:76,0,255
+Scary_pathogen_scaffold_1	464035	.	T	C	28.0265	PASS	DP=34;VDB=0.00490644;SGB=-0.590765;RPB=0.995723;MQB=0.990403;MQSB=0.849308;BQB=0.180092;MQ0F=0.0882353;ICB=1;HOB=0.5;AC=1;AN=2;DP4=6,8,4,1;MQ=38	GT:PL	0/1:61,0,119

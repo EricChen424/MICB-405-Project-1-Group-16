@@ -101,6 +101,11 @@ do
 	>~/Project_1/4_BcfTools_Output/raw/$prefix\.raw.vcf
 done
 
+#the Bat file is messed up without the -A flag
+bcftools mpileup -I -A --fasta-ref ~/Project_1/ref_genome.fasta \
+~/Project_1/3_SamTools_Output/Bat.sorted.bam | bcftools call -mv - \
+>~/Project_1/4_BcfTools_Output/raw/Bat.raw.vcf
+
 #4_2_bcftools_filtering
 for vcf in ~/Project_1/4_BcfTools_Output/raw/*.raw.vcf;
 do
