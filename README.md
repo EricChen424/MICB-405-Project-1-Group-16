@@ -12,26 +12,26 @@ The vcf_to_fasta.py (https://github.com/MICB405-Group-16/MICB-405-Project-1-Grou
 
 The MSADistanceMatrix.py file was taken from https://github.com/MICB405-Group-16/MSADistanceMatrix. Note that we ran this script locally and it isn't included in our master shell script.
 
-As a rundown of every folder:
-1_FASTQC_Output:
+#Folder Rundown
+###1_FASTQC_Output:
 - contains the FastQC output for every set of paired end reads for each sample
 
-2_BWA_Output:
+###2_BWA_Output:
 - contains SAMtools flagstats statistics for every paired end alignment for each sample
 - also contains FastQC output for Patient 14 and the Bat sample, following removal of Nextera adapters, to show the change in adapter count
 
-4_BcfTools_Output:
+###4_BcfTools_Output:
 Contains VCF output for each alignment's variants. By default, indels are removed from the VCF file.
 - raw: no additional filters applied to VCF files
 - filtered: QUAL >= 20, DP >= 5
 - strict_filter: QUAL >= 20, DP >= 5, DP4[0] == 0, DP4[1] == 0, DP4[2] > 2, DP4[3] > 2
   - tries to also ensure that DP4 doesn't imply mapping to the reference allele and the alternate allele is balanced between forward and      reverse reads
 
-5_MSA_Output:
+###5_MSA_Output:
 - MSA output from MAFFT for both the filtered and strict_filter VCF files
 - contains both the version before trimAI processing and the version after trimAI processing
 
-6_Tree:
+###6_Tree:
 - RAxML ML phylogenies for the trimAI processed MSAs of both the filtered and strict_filter dataset
 - includes the tree using different models such as JC, JC-G2, JC-G4, and GTR-G4 for comparison
 - we chose to use the GTR-G4 model
