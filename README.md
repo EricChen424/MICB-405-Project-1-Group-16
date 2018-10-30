@@ -1,14 +1,14 @@
 # Project 1
-This repository contains data from each step of our pipeline for Project 1 of MICB 405, in addition to the scripts used and any additional data files that may be needed. The scripts should work as long as you upload all files in the scripts folder (https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/tree/master/scripts) into the same directory and run the master script within that directory. We have left out the FASTQ files and the BAM files because they take up too much space.
+This repository contains data from each step of our pipeline for Project 1 of MICB 405, in addition to the scripts used and any additional data files that may be needed. The scripts should work as long as you upload all files in the [scripts folder](https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/tree/master/scripts) into the same directory and run the master script within that directory. We have left out the FASTQ files and the BAM files because they take up too much space.
 
 Note: If you get complaints with shell scripts about a bad interpreter with a ^M at the end, follow this page:
 https://stackoverflow.com/questions/2920416/configure-bin-shm-bad-interpreter
 
 ie. Open your script with vim, type :set fileformat=unix, hit Enter, then save with :wq
 
-The NexteraPE-PE.fa file (https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/blob/master/scripts/NexteraPE-PE.fa) was obtained from the Trimmomatic repository: https://github.com/timflutre/trimmomatic/tree/master/adapters. This was needed to remove Nextera adapters with Trimmomatic.
+The [NexteraPE-PE.fa file](https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/blob/master/scripts/NexteraPE-PE.fa) was obtained from the [Trimmomatic repository](https://github.com/timflutre/trimmomatic/tree/master/adapters). This was needed to remove Nextera adapters with Trimmomatic.
 
-The vcf_to_fasta.py (https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/blob/master/scripts/vcf_to_fasta_het.py) file was obtained from the following repository (https://github.com/jlgardy/tb_demo)
+The [vcf_to_fasta.py](https://github.com/MICB405-Group-16/MICB-405-Project-1-Group-16/blob/master/scripts/vcf_to_fasta_het.py) file was obtained from the following [repository](https://github.com/jlgardy/tb_demo)
 
 The MSADistanceMatrix.py file was taken from https://github.com/MICB405-Group-16/MSADistanceMatrix. Note that we ran this script locally and it isn't included in our master shell script.
 
